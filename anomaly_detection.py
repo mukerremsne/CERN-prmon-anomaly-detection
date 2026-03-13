@@ -20,7 +20,7 @@ plt.figure(figsize=(10,5))
 plt.plot(df_a['time'],df_a['pss'],label='Process Memory(PSS)', color='blue')
 plt.axhline(y=threshold, color='red', linestyle='--', label='Anomaly Threshold')
 anomalies=df_a[df_a['is_anomaly']]
-plt.scatter(anomalies['time'],anomalies['pss'], color='red', label='DECTED ANOMALY')
+plt.scatter(anomalies['time'],anomalies['pss'], color='red', label='DETECTED ANOMALY')
 plt.title("ATLAS Software Monitoring: Anomaly Detection")
 plt.xlabel('Time(s)')
 plt.ylabel('Memory(KB)')
